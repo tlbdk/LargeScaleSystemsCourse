@@ -4,3 +4,8 @@
 *.jar
 *.war
 *.ear
+/session01/code/JavaMVC/nbproject/private/
+/session01/code/RESTService/nbproject/private/
+/session01/code/RESTService/build/
+/session01/code/JavaWebService/nbproject/private/
+/session01/code/JavaWebService/build/

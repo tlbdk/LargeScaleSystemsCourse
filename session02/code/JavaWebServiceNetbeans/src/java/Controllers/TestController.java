@@ -4,14 +4,15 @@
  */
 package Controllers;
 
+import Models.HelloSOAP;
 import Models.TestModel;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import Models.HelloSOAP_Service;
 
 /**
  *
@@ -24,6 +25,11 @@ public class TestController extends HttpServlet {
         model.title = "Hello from Index title";
         model.stuff = "Hello from Index stuff";
         
+        HelloSOAP_Service service = new HelloSOAP_Service();
+        HelloSOAP test = service.getHelloSOAPPort();
+        
+        model.stuff += ": " + test.hello("Webservice");
+
         request.setAttribute("model", model);
         RequestDispatcher view = request.getRequestDispatcher("Views/Test/Index.jsp");
         view.forward(request, response);

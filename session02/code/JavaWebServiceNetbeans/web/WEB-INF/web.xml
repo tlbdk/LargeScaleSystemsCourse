@@ -4,18 +4,9 @@
         <servlet-name>TestController</servlet-name>
         <servlet-class>Controllers.TestController</servlet-class>
     </servlet>
-    <servlet>
-        <servlet-name>MVCTest</servlet-name>
-        <servlet-class>MVCTest</servlet-class>
-    </servlet>
     <servlet-mapping>
         <servlet-name>TestController</servlet-name>
         <url-pattern>/Test</url-pattern>
-        <url-pattern>/Test/*</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>MVCTest</servlet-name>
-        <url-pattern>/MVCTest</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

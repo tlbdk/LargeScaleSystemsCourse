@@ -13,6 +13,6 @@
     </head>
     <body>
         <h1><%= model.stuff %></h1>
-        <a href="?do=home">Home</a>
+        <a href="?">Back to index</a>
     </body>
 </html>
